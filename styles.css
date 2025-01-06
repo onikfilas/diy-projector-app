@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.toolbar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.toolbar button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.canvas-container {
+  text-align: center;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  max-width: 100%;
+  height: auto;
+}
