@@ -9,15 +9,40 @@
 <body>
   <div class="container">
     <h1>DIY Home Decoration Projector</h1>
-    <div class="toolbar">
+    <div class="toolbar" id="toolbar">
       <input type="file" id="imageInput" accept="image/*">
-      <button id="flipHorizontal">Flip Horizontal</button>
-      <button id="flipVertical">Flip Vertical</button>
-      <button id="rotate">Rotate 90°</button>
-      <button id="reset">Reset</button>
+      <button id="fullScreen">Full Screen (F)</button>
+      <button id="toggleMenu">Hide Menu (M)</button>
+      <button id="invertColors">Invert Colors (I)</button>
+      <button id="showMoveTool">Move Tool (T)</button>
+      <button id="showOverlays">Overlays (O)</button>
+      <button id="lineWeight">Line Weight (W)</button>
+      <button id="flipVertical">Flip Vertical (V)</button>
+      <button id="flipHorizontal">Flip Horizontal (H)</button>
+      <button id="rotate">Rotate 90° (R)</button>
+      <button id="centerReset">Center & Reset (C)</button>
+      <button id="magnify">Magnify (M)</button>
+      <button id="zoomOut">Zoom Out (Z)</button>
+      <button id="lineTool">Line Tool (L)</button>
+      <button id="showLayers">Layers (Y)</button>
+      <button id="stitchMenu">Stitch Menu (S)</button>
     </div>
     <div class="canvas-container">
       <canvas id="canvas"></canvas>
+    </div>
+    <div class="overlay-options" id="overlayOptions">
+      <label><input type="checkbox" id="gridOverlay"> Grid</label>
+      <label><input type="checkbox" id="borderOverlay"> Border</label>
+      <label><input type="checkbox" id="paperSheetOverlay"> Paper Sheet</label>
+      <label><input type="checkbox" id="flipLinesOverlay"> Flip Lines</label>
+      <label><input type="checkbox" id="wrongSideOverlay"> Wrong Side</label>
+    </div>
+    <div class="move-tool" id="moveTool">
+      <button id="moveUp">↑</button>
+      <button id="moveDown">↓</button>
+      <button id="moveLeft">←</button>
+      <button id="moveRight">→</button>
+      <button id="nextCorner">Next Corner</button>
     </div>
   </div>
   <script src="script.js"></script>
